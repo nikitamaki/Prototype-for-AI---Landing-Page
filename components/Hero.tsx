@@ -19,8 +19,8 @@ const Hero: React.FC = () => {
     const nodes = Array.from({ length: nodeCount }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 1.5,
-      vy: (Math.random() - 0.5) * 1.5,
+      vx: (Math.random() - 0.5) * 0.01,
+      vy: (Math.random() - 0.5) * 0.01,
       r: Math.random() * 2 + 1
     }));
 
@@ -28,8 +28,8 @@ const Hero: React.FC = () => {
     const simulation = d3.forceSimulation(nodes)
       .alphaDecay(0)
       .velocityDecay(0)
-      .force("charge", d3.forceManyBody().strength(-10))
-      .force("collision", d3.forceCollide().radius(5));
+      .force("charge", d3.forceManyBody().strength(-0.1))
+      .force("collision", d3.forceCollide().radius(1));
 
     // Draw elements
     const g = svg.append("g");
