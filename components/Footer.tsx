@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-slate-400 py-16 border-t border-slate-800">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-4 gap-12 mb-12 text-left">
           
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 font-bold text-xl text-white mb-4">
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               <span>3DEVISION</span>
             </div>
             <p className="text-sm leading-relaxed mb-6">
-              Your dedicated AI product visualization agency. Scale content, reduce costs, and drive conversions with photorealistic 3D.
+              We engineer visual systems. Combining the speed of AI with the control of professional 3D design.
             </p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-brand-accent transition-colors"><Twitter className="w-5 h-5" /></a>
@@ -43,18 +43,16 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-4">Start Selling</h4>
-            <p className="text-sm mb-4">Stop managing logistics. Start scaling visual content.</p>
-            <form className="flex flex-col gap-2">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="bg-slate-900 border border-slate-700 rounded px-4 py-2 focus:outline-none focus:border-brand-accent text-white"
-              />
-              <button className="bg-brand-accent text-brand-dark font-bold py-2 rounded hover:bg-sky-400 transition-colors">
-                Book Demo
+            <h4 className="text-white font-bold mb-4">Stop Managing Logistics. Start Selling.</h4>
+            <p className="text-sm mb-4">Ready to transform your catalog with the speed of AI and the quality of High-End 3D?</p>
+            <div className="flex flex-col gap-3">
+              <button className="bg-brand-accent text-brand-dark font-bold py-2 px-4 rounded hover:bg-sky-400 transition-colors">
+                Book a Demo
               </button>
-            </form>
+              <button className="border border-slate-700 text-white font-bold py-2 px-4 rounded hover:bg-slate-800 transition-colors">
+                Contact Sales
+              </button>
+            </div>
           </div>
 
         </div>

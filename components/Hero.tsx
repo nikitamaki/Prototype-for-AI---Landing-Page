@@ -109,25 +109,25 @@ const Hero: React.FC = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
           </span>
-          Scale visual content 10X faster
+          Next-Gen Product Rendering
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight max-w-5xl bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
-          Your Photorealistic AI <br /> 
-          Product Visualization Agency
+          AI Technology + <br /> 
+          Expert 3D Precision
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-          Specializing in photorealistic renders and interactive 3D solutions for B2B Enterprise E-commerce.
+          Create studio-quality photorealistic content for massive assortments. We combine the speed of AI with the control of professional 3D design to scale your visuals 10X faster than traditional photography.
         </p>
 
         <div className="flex flex-col sm:flex-row items-start gap-4">
           <button className="group bg-brand-accent hover:bg-sky-400 text-brand-dark px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_30px_rgba(56,189,248,0.5)]">
-            Start Selling
+            Get a Quote
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
           <button className="px-8 py-4 rounded-full font-semibold text-white border border-slate-700 hover:bg-slate-800 transition-colors flex items-center gap-2">
-             View Case Studies
+             View Portfolio
              <ChevronRight className="w-4 h-4 text-slate-400" />
           </button>
         </div>

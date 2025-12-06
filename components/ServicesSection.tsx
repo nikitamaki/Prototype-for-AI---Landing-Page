@@ -5,27 +5,21 @@ const ServicesSection: React.FC = () => {
   const services = [
     {
       title: "AI-Powered Lifestyle Rendering",
-      desc: "Instantly place your 3D product into ideal, customizable, photorealistic environments without expensive staging.",
+      desc: "Instantly place your products into ideal, customizable, photorealistic environments.",
       icon: <Image className="w-8 h-8" />,
-      img: "https://picsum.photos/seed/interior/400/300"
+      img: "https://picsum.photos/seed/interior/400/600"
     },
     {
       title: "Interactive 3D Configurators",
-      desc: "Allow B2B buyers to configure products and get real-time pricing, accelerating sales cycles.",
+      desc: "Allow B2B buyers to customize products, view real-time pricing, and preview in AR.",
       icon: <Settings className="w-8 h-8" />,
-      img: "https://picsum.photos/seed/car/400/300"
+      img: "https://picsum.photos/seed/car/400/600"
     },
     {
       title: "High-Impact Product Animation",
-      desc: "Dynamic animations to explain complex functions, ideal for machinery and medical equipment.",
+      desc: "Dynamic 3D animations that explain complex functions—ideal for machinery, tech, and medical equipment.",
       icon: <Play className="w-8 h-8" />,
-      img: "https://picsum.photos/seed/robot/400/300"
-    },
-    {
-      title: "AR/VR Ready Digital Assets",
-      desc: "Future-proof content optimized for Augmented Reality, reducing product returns by up to 30%.",
-      icon: <Box className="w-8 h-8" />,
-      img: "https://picsum.photos/seed/vr/400/300"
+      img: "https://picsum.photos/seed/robot/400/600"
     }
   ];
 
@@ -39,24 +33,24 @@ const ServicesSection: React.FC = () => {
           </span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 text-left">
           {services.map((service, idx) => (
-            <div key={idx} className="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent z-10 transition-opacity duration-300" />
+            <div key={idx} className="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 min-h-[500px] flex flex-col justify-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent z-10 transition-opacity duration-300" />
               
               <img 
                 src={service.img} 
                 alt={service.title}
-                className="w-full h-64 object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
+                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
               />
               
-              <div className="absolute bottom-0 left-0 p-8 z-20 w-full">
-                <div className="w-14 h-14 rounded-full bg-brand-accent/20 backdrop-blur-md border border-brand-accent/30 flex items-center justify-center mb-4 text-brand-accent">
+              <div className="relative p-8 z-20 w-full">
+                <div className="w-14 h-14 rounded-full bg-brand-accent/20 backdrop-blur-md border border-brand-accent/30 flex items-center justify-center mb-6 text-brand-accent">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                <p className="text-slate-400 max-w-md">{service.desc}</p>
-                <div className="mt-6 w-full h-px bg-slate-800 group-hover:bg-brand-accent/50 transition-colors" />
+                <h3 className="text-2xl font-bold mb-3 leading-tight">{service.title}</h3>
+                <p className="text-slate-300 text-sm leading-relaxed mb-4 opacity-90">{service.desc}</p>
+                <div className="w-full h-px bg-slate-700 group-hover:bg-brand-accent/50 transition-colors" />
               </div>
             </div>
           ))}
